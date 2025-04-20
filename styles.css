@@ -1,0 +1,104 @@
+/* styles.css */
+
+/* Color theme */
+:root {
+    --primary-color: #3498db; /* Blue */
+    --secondary-color: #2ecc71; /* Green */
+    --background-color: #f4f4f4; /* Light gray */
+    --text-color: #333; /* Dark text */
+    --button-hover: #2980b9; /* Darker blue for hover */
+}
+
+/* Basic reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Page container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Header styles for the Login and Dashboard pages */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: var(--primary-color);
+}
+
+/* Styling for the Login page */
+.login-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: var(--button-hover);
+}
+
+/* Styling for the Dashboard page */
+.dashboard-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.dashboard-container h2 {
+    color: var(--primary-color);
+}
+
+.dashboard-container p {
+    font-size: 1.1em;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .login-form, .dashboard-container {
+        width: 100%;
+        padding: 15px;
+    }
+}
